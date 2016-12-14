@@ -9,10 +9,8 @@ function Menu(options) {
     var title = event.target.closest('.title');
     if (title) {
       elem.classList.toggle('open');
-    }
-    
-    elem.hasClass('open') ? title.html('close') : title.html('open');
-      
+        elem.classList.contains('open') ? title.innerText = 'close' : title.innerText = 'open';
+    }      
   };
 
 }
